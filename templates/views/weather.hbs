@@ -1,0 +1,39 @@
+{{>header}}
+<main class="container-fluid hero">
+    <div class="row">
+        <div class="col-md-6 col-10 mx-auto mt-4 mb-4">
+            <form>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control form-control-lg" id="searchByCity" aria-describedby="citySearch" placeholder="Enter your city" autocomplete="off" />
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-secondary" id="searchBtn">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-10 mx-auto">
+            <div class="alert alert-danger" role="alert" id="errorMsg"></div>
+            <div class="weather-container" id="weatherContainer">
+                <div class="location" id="location"></div>
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <i class="mx-auto" id="weatherIcon"></i>
+                        <p class="text-center" id="desc"></p>
+                    </div>
+                    <div class="col-md-4 col-6 mx-auto my-auto">
+                        <h2 class="text-large" title="temperature"><span id="temp">0</span><sup>o</sup>C</h2>
+                    </div>
+                    <div class="col-md-4 col-6 my-auto">
+                        <ul>
+                            <li title="humidity">Humidity: <span id="humidity">0</span>%</li>
+                            <li title="speed"><span id="speed">0</span> km/h </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{{>footer}}
